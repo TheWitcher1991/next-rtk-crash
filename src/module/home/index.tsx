@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from 'react'
 import CartDropdown from './CardDropdown'
 import ProductItem from './ProductItem'

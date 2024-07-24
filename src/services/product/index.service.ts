@@ -1,5 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query";
-import {IProduct} from "@/store/product/index.types";
+import {IProduct} from "@/services/product/index.types";
 
 export const ProductService = createApi({
     reducerPath: 'api/products',
@@ -10,3 +10,5 @@ export const ProductService = createApi({
         }),
     }),
 })
+
+export const {useGetProductsQuery} = ProductService;
